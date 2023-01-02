@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		61DC94ED29636FDB008BB33B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DC94EC29636FDB008BB33B /* AppDelegate.swift */; };
 		61DC94EF29636FDB008BB33B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DC94EE29636FDB008BB33B /* SceneDelegate.swift */; };
-		61DC94F129636FDB008BB33B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DC94F029636FDB008BB33B /* ViewController.swift */; };
 		61DC94F429636FDB008BB33B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61DC94F229636FDB008BB33B /* Main.storyboard */; };
 		61DC94F629636FDD008BB33B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61DC94F529636FDD008BB33B /* Assets.xcassets */; };
 		61DC94F929636FDD008BB33B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61DC94F729636FDD008BB33B /* LaunchScreen.storyboard */; };
+		61DC950129637857008BB33B /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DC950029637857008BB33B /* Registration.swift */; };
+		61DC950529638C1F008BB33B /* AddRegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DC950429638C1F008BB33B /* AddRegistrationTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		61DC94E929636FDB008BB33B /* HotelManzana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotelManzana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61DC94EC29636FDB008BB33B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61DC94EE29636FDB008BB33B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		61DC94F029636FDB008BB33B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		61DC94F329636FDB008BB33B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		61DC94F529636FDD008BB33B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61DC94F829636FDD008BB33B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61DC94FA29636FDD008BB33B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61DC950029637857008BB33B /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
+		61DC950429638C1F008BB33B /* AddRegistrationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRegistrationTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				61DC94EC29636FDB008BB33B /* AppDelegate.swift */,
 				61DC94EE29636FDB008BB33B /* SceneDelegate.swift */,
-				61DC94F029636FDB008BB33B /* ViewController.swift */,
 				61DC94F229636FDB008BB33B /* Main.storyboard */,
+				61DC950429638C1F008BB33B /* AddRegistrationTableViewController.swift */,
+				61DC950029637857008BB33B /* Registration.swift */,
 				61DC94F529636FDD008BB33B /* Assets.xcassets */,
 				61DC94F729636FDD008BB33B /* LaunchScreen.storyboard */,
 				61DC94FA29636FDD008BB33B /* Info.plist */,
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61DC94F129636FDB008BB33B /* ViewController.swift in Sources */,
 				61DC94ED29636FDB008BB33B /* AppDelegate.swift in Sources */,
+				61DC950529638C1F008BB33B /* AddRegistrationTableViewController.swift in Sources */,
+				61DC950129637857008BB33B /* Registration.swift in Sources */,
 				61DC94EF29636FDB008BB33B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
