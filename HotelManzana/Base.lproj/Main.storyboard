@@ -83,6 +83,120 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection id="cjS-pn-JPl">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="h46-ul-NeV">
+                                        <rect key="frame" x="0.0" y="177.66666793823245" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h46-ul-NeV" id="Nb2-dI-CiI">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jan 03, 2023" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ap-dJ-ekS">
+                                                    <rect key="frame" x="272" y="11.000000000000002" width="101" height="21.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check-In Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4y-YZ-YmI">
+                                                    <rect key="frame" x="19.999999999999993" y="11.000000000000002" width="109.33333333333331" height="21.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="5ap-dJ-ekS" secondAttribute="bottom" id="JQz-k1-CJX"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="5ap-dJ-ekS" secondAttribute="trailing" id="Jge-PL-NOz"/>
+                                                <constraint firstItem="J4y-YZ-YmI" firstAttribute="top" secondItem="Nb2-dI-CiI" secondAttribute="topMargin" id="XLA-Na-OYj"/>
+                                                <constraint firstItem="5ap-dJ-ekS" firstAttribute="top" secondItem="Nb2-dI-CiI" secondAttribute="topMargin" id="iQR-EQ-QZW"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="J4y-YZ-YmI" secondAttribute="bottom" id="pay-yQ-Azd"/>
+                                                <constraint firstItem="J4y-YZ-YmI" firstAttribute="leading" secondItem="Nb2-dI-CiI" secondAttribute="leadingMargin" id="sIi-uB-bWy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="U8o-nJ-3xj">
+                                        <rect key="frame" x="0.0" y="221.33333587646484" width="393" height="238.33332824707031"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U8o-nJ-3xj" id="Pw7-ff-RYz">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="238.33332824707031"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="con-WG-iNy">
+                                                    <rect key="frame" x="20" y="11" width="353" height="217"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="694467608.14971805">
+                                                        <!--2023-01-03 19:40:08 +0000-->
+                                                    </date>
+                                                    <connections>
+                                                        <action selector="datePIckerValueChanged:" destination="Pjl-uQ-JnG" eventType="valueChanged" id="okj-J2-f6R"/>
+                                                    </connections>
+                                                </datePicker>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="con-WG-iNy" secondAttribute="bottom" id="QOa-UU-xyT"/>
+                                                <constraint firstItem="con-WG-iNy" firstAttribute="leading" secondItem="Pw7-ff-RYz" secondAttribute="leadingMargin" id="hPc-yh-eaq"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="con-WG-iNy" secondAttribute="trailing" id="lql-VO-7pH"/>
+                                                <constraint firstItem="con-WG-iNy" firstAttribute="top" secondItem="Pw7-ff-RYz" secondAttribute="topMargin" id="spG-sa-pMv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="dfO-qN-KgN">
+                                        <rect key="frame" x="0.0" y="459.66666412353516" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dfO-qN-KgN" id="hnV-7v-4mb">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jan 04, 2023" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVV-ad-Zho">
+                                                    <rect key="frame" x="272" y="11.000000000000002" width="101" height="21.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check-Out Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ko1-O5-JRm">
+                                                    <rect key="frame" x="20.000000000000007" y="11.000000000000002" width="123.66666666666669" height="21.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="fVV-ad-Zho" secondAttribute="trailing" id="0Yu-kX-D9k"/>
+                                                <constraint firstItem="fVV-ad-Zho" firstAttribute="top" secondItem="hnV-7v-4mb" secondAttribute="topMargin" id="A0v-Ka-OYY"/>
+                                                <constraint firstItem="Ko1-O5-JRm" firstAttribute="leading" secondItem="hnV-7v-4mb" secondAttribute="leadingMargin" id="BqP-47-VtM"/>
+                                                <constraint firstItem="Ko1-O5-JRm" firstAttribute="top" secondItem="hnV-7v-4mb" secondAttribute="topMargin" id="Mmu-hd-zku"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="fVV-ad-Zho" secondAttribute="bottom" id="P78-pz-eWq"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Ko1-O5-JRm" secondAttribute="bottom" id="eG7-2e-C7q"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="PRT-UM-VFg">
+                                        <rect key="frame" x="0.0" y="503.33333206176758" width="393" height="238.33332824707031"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PRT-UM-VFg" id="79A-eZ-mc0">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="238.33332824707031"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o70-pJ-YnJ">
+                                                    <rect key="frame" x="20" y="11" width="353" height="216.33333333333334"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="694554008.14971805">
+                                                        <!--2023-01-04 19:40:08 +0000-->
+                                                    </date>
+                                                    <connections>
+                                                        <action selector="datePIckerValueChanged:" destination="Pjl-uQ-JnG" eventType="valueChanged" id="sy4-AR-hZr"/>
+                                                    </connections>
+                                                </datePicker>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="o70-pJ-YnJ" secondAttribute="bottom" id="5lS-Hc-RPM"/>
+                                                <constraint firstItem="o70-pJ-YnJ" firstAttribute="top" secondItem="79A-eZ-mc0" secondAttribute="topMargin" id="DZa-Dz-Cyp"/>
+                                                <constraint firstItem="o70-pJ-YnJ" firstAttribute="leading" secondItem="79A-eZ-mc0" secondAttribute="leadingMargin" id="mx1-ep-Nyq"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="o70-pJ-YnJ" secondAttribute="trailing" id="n1D-nz-NTv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="Pjl-uQ-JnG" id="su0-d6-0j9"/>
@@ -97,6 +211,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="checkInDateLabel" destination="5ap-dJ-ekS" id="USV-4j-snk"/>
+                        <outlet property="checkInDatePicker" destination="con-WG-iNy" id="BNa-0U-k6L"/>
+                        <outlet property="checkOutDateLabel" destination="fVV-ad-Zho" id="hLB-yP-Fe6"/>
+                        <outlet property="checkOutDatePicker" destination="o70-pJ-YnJ" id="AIH-q6-Cap"/>
                         <outlet property="emailTextField" destination="1uV-Vg-F7c" id="em7-1r-nVj"/>
                         <outlet property="firstNameTextField" destination="6P0-17-q74" id="pHR-WL-VPV"/>
                         <outlet property="lastNameTextField" destination="hnR-KV-e0H" id="yOE-a2-ZMw"/>
