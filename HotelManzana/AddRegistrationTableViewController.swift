@@ -17,6 +17,20 @@ class AddRegistrationTableViewController: UITableViewController {
     @IBOutlet var checkOutDateLabel: UILabel!
     @IBOutlet var checkOutDatePicker: UIDatePicker!
     
+    let checkInDatePickerCellIndexPath = IndexPath(row: 1, section: 1)
+    let checkOutDatePickerCellIndexPath = IndexPath(row: 3, section: 1)
+     
+    var isCheckInDatePickerVisible: Bool = false {
+        didSet {
+            checkInDatePicker.isHidden = !isCheckInDatePickerVisible
+        }
+    }
+     
+    var isCheckOutDatePickerVisible: Bool = false {
+        didSet {
+            checkOutDatePicker.isHidden = !isCheckOutDatePickerVisible
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,6 +70,31 @@ class AddRegistrationTableViewController: UITableViewController {
         
     }
     
+    override func tableView(_ tableView: UITableView,
+       heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch indexPath {
+        case checkInDatePickerCellIndexPath where
+           isCheckInDatePickerVisible == false:
+            return 0
+        case checkOutDatePickerCellIndexPath where
+           isCheckOutDatePickerVisible == false:
+            return 0
+        default:
+            return UITableView.automaticDimension
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView,
+       estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch indexPath {
+        case checkInDatePickerCellIndexPath:
+            return 190
+        case checkOutDatePickerCellIndexPath:
+            return 190
+        default:
+            return UITableView.automaticDimension
+        }
+    }
     
     
     
