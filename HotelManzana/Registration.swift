@@ -22,14 +22,3 @@ struct Registration {
 }
 
 
-struct RoomType: Equatable {
-    var id: Int,
-        name: String,
-        shortName: String,
-        price: Int
-    
-    // Equatable Protocol Implementation for RoomType
-    static func ==(lhs: RoomType, rhs: RoomType) -> Bool {
-        return lhs.id == rhs.id
-    }
-}
