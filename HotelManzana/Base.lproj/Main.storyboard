@@ -202,7 +202,7 @@
                             <tableViewSection id="I4q-TJ-J6r">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="UK7-cp-xz2">
-                                        <rect key="frame" x="0.0" y="774.99999237060558" width="393" height="62.333332061767578"/>
+                                        <rect key="frame" x="0.0" y="774.99999237060547" width="393" height="62.333332061767578"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UK7-cp-xz2" id="5ez-ZG-ll8">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="62.333332061767578"/>
@@ -246,7 +246,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="uXU-vi-4OW">
-                                        <rect key="frame" x="0.0" y="837.33332443237316" width="393" height="62.333332061767578"/>
+                                        <rect key="frame" x="0.0" y="837.33332443237305" width="393" height="62.333332061767578"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uXU-vi-4OW" id="NKi-LV-3xn">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="62.333332061767578"/>
@@ -291,6 +291,54 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection id="dpE-bB-TZY">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="dTo-ES-f6M">
+                                        <rect key="frame" x="0.0" y="935.66665649414062" width="393" height="61.333332061767578"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dTo-ES-f6M" id="5gK-dU-5xb">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="61.333332061767578"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lFY-JA-Bc7">
+                                                    <rect key="frame" x="20" y="14.999999999999998" width="353" height="31.333333333333329"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Wi-Fi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mh3-kf-7be">
+                                                            <rect key="frame" x="0.0" y="0.0" width="202.33333333333334" height="31.333333333333332"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="bTK-8b-y2P">
+                                                            <rect key="frame" x="202.33333333333337" y="0.0" width="150.66666666666663" height="31.333333333333332"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="$10 per day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Adt-ND-4Pz">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="89.666666666666671" height="31.333333333333332"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="il6-Gg-jgX">
+                                                                    <rect key="frame" x="101.66666666666666" y="0.0" width="51" height="31.333333333333332"/>
+                                                                    <connections>
+                                                                        <action selector="wifiSwitchChanged:" destination="Pjl-uQ-JnG" eventType="valueChanged" id="yJK-8V-Uyd"/>
+                                                                    </connections>
+                                                                </switch>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lFY-JA-Bc7" firstAttribute="top" secondItem="5gK-dU-5xb" secondAttribute="topMargin" constant="4" id="68c-rb-bbV"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="lFY-JA-Bc7" secondAttribute="bottom" constant="4" id="8PM-vM-Z8C"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="lFY-JA-Bc7" secondAttribute="trailing" id="A5P-1f-3vY"/>
+                                                <constraint firstItem="lFY-JA-Bc7" firstAttribute="leading" secondItem="5gK-dU-5xb" secondAttribute="leadingMargin" id="dk2-LQ-BWl"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="Pjl-uQ-JnG" id="su0-d6-0j9"/>
@@ -316,6 +364,7 @@
                         <outlet property="numberOfAdultsStepper" destination="Ycp-B2-kdI" id="bIr-wq-U6t"/>
                         <outlet property="numberOfChildrenLabel" destination="bFd-uw-lbe" id="WCU-3r-qo7"/>
                         <outlet property="numberOfChildrenStepper" destination="DHf-na-7Ms" id="y5P-dX-G5F"/>
+                        <outlet property="wifiSwitch" destination="il6-Gg-jgX" id="UNu-Be-kai"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sPQ-E7-7eT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

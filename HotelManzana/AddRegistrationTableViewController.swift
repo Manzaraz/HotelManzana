@@ -22,6 +22,7 @@ class AddRegistrationTableViewController: UITableViewController {
     @IBOutlet var numberOfChildrenLabel: UILabel!
     @IBOutlet var numberOfChildrenStepper: UIStepper!
     
+    @IBOutlet var wifiSwitch: UISwitch!
     
     
     let checkInDateLabelCellIndexPath = IndexPath(row: 0, section: 1)
@@ -60,6 +61,7 @@ class AddRegistrationTableViewController: UITableViewController {
         let checkOutDate = checkOutDatePicker.date
         let numberOfAdults = Int(numberOfAdultsStepper.value)
         let numberOfChildren = Int(numberOfChildrenStepper.value)
+        let hasWifi = wifiSwitch.isOn
         
         print("DONE TAPPED")
         print("firstName: \(firstName)")
@@ -69,6 +71,7 @@ class AddRegistrationTableViewController: UITableViewController {
         print("checkOut: \(checkOutDate)")
         print("numberOfAdults: \(numberOfAdults)")
         print("numberOfChildren: \(numberOfChildren)")
+        print("wifi: \(hasWifi)")
     }
     
     func updateDateViews() {
@@ -141,5 +144,8 @@ class AddRegistrationTableViewController: UITableViewController {
         updateNumberOfGests()
     }
     
+    @IBAction func wifiSwitchChanged(_ sender: UISwitch) {
+        // implement later
+    }
     
 }
