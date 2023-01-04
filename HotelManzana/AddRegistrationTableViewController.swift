@@ -17,13 +17,20 @@ class AddRegistrationTableViewController: UITableViewController {
     @IBOutlet var checkOutDateLabel: UILabel!
     @IBOutlet var checkOutDatePicker: UIDatePicker!
     
+    @IBOutlet var numberOfAdultsLabel: UILabel!
+    @IBOutlet var numberOfAdultsStepper: UIStepper!
+    @IBOutlet var numberOfChildrenLabel: UILabel!
+    @IBOutlet var numberOfChildrenStepper: UIStepper!
+    
+    
+    
     let checkInDateLabelCellIndexPath = IndexPath(row: 0, section: 1)
     let checkInDatePickerCellIndexPath = IndexPath(row: 1, section: 1)
     
     let checkOutDateLabelCellIndexPath = IndexPath(row: 2, section: 1)
     let checkOutDatePickerCellIndexPath = IndexPath(row: 3, section: 1)
     
-    var isCheckInDatePickerVisible: Bool = false { // can change for true
+    var isCheckInDatePickerVisible: Bool = false { 
         didSet {
             checkInDatePicker.isHidden = !isCheckInDatePickerVisible
         }
@@ -51,6 +58,8 @@ class AddRegistrationTableViewController: UITableViewController {
         let email = emailTextField.text ?? ""
         let checkInDate = checkInDatePicker.date
         let checkOutDate = checkOutDatePicker.date
+        let numberOfAdults = Int(numberOfAdultsStepper.value)
+        let numberOfChildren = Int(numberOfChildrenStepper.value)
         
         print("DONE TAPPED")
         print("firstName: \(firstName)")
@@ -58,6 +67,8 @@ class AddRegistrationTableViewController: UITableViewController {
         print("email: \(email)")
         print("checkIn: \(checkInDate)")
         print("checkOut: \(checkOutDate)")
+        print("numberOfAdults: \(numberOfAdults)")
+        print("numberOfChildren: \(numberOfChildren)")
     }
     
     func updateDateViews() {
@@ -70,7 +81,7 @@ class AddRegistrationTableViewController: UITableViewController {
     @IBAction func datePIckerValueChanged(_ sender: UIDatePicker) {
         
         updateDateViews()
-        
+        updateNumberOfGests()
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -119,6 +130,15 @@ class AddRegistrationTableViewController: UITableViewController {
         
         tableView.beginUpdates()
         tableView.endUpdates()
+    }
+    
+    func updateNumberOfGests() {
+        numberOfAdultsLabel.text = "\(Int(numberOfAdultsStepper.value))"
+        numberOfChildrenLabel.text = "\(Int(numberOfChildrenStepper.value))"
+    }
+    
+    @IBAction func stepperValueChanged(_ sender: UIStepper) {
+        updateNumberOfGests()
     }
     
     
