@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AddRegistrationTableViewController: UITableViewController {
+class AddRegistrationTableViewController: UITableViewController, SelectRoomTypeTableViewControllerDelegate {
     @IBOutlet var firstNameTextField: UITextField!
     @IBOutlet var lastNameTextField: UITextField!
     @IBOutlet var emailTextField: UITextField!
@@ -23,6 +23,10 @@ class AddRegistrationTableViewController: UITableViewController {
     @IBOutlet var numberOfChildrenStepper: UIStepper!
     
     @IBOutlet var wifiSwitch: UISwitch!
+    
+    @IBOutlet var roomTypeLabel: UILabel!
+    
+    var roomType: RoomType?
     
     
     let checkInDateLabelCellIndexPath = IndexPath(row: 0, section: 1)
@@ -51,6 +55,8 @@ class AddRegistrationTableViewController: UITableViewController {
         checkInDatePicker.date = midnightToday
         
         updateDateViews()
+        updateNumberOfGests()
+        updateRoomType()
     }
     
     @IBAction func doneBarButttonTapped(_ sender: UIBarButtonItem) {
@@ -62,6 +68,7 @@ class AddRegistrationTableViewController: UITableViewController {
         let numberOfAdults = Int(numberOfAdultsStepper.value)
         let numberOfChildren = Int(numberOfChildrenStepper.value)
         let hasWifi = wifiSwitch.isOn
+        let roomChoice = roomType?.name ?? "Not Set"
         
         print("DONE TAPPED")
         print("firstName: \(firstName)")
@@ -72,6 +79,7 @@ class AddRegistrationTableViewController: UITableViewController {
         print("numberOfAdults: \(numberOfAdults)")
         print("numberOfChildren: \(numberOfChildren)")
         print("wifi: \(hasWifi)")
+        print("roomType: \(roomChoice)")
     }
     
     func updateDateViews() {
@@ -146,6 +154,30 @@ class AddRegistrationTableViewController: UITableViewController {
     
     @IBAction func wifiSwitchChanged(_ sender: UISwitch) {
         // implement later
+    }
+    
+    func updateRoomType() {
+        if let roomType = roomType {
+            roomTypeLabel.text = roomType.name
+        } else {
+            roomTypeLabel.text = "Not Set"
+        }
+    }
+    
+    func selectRoomTypeTableViewController(_ controller:
+           SelectRoomTypeTableViewController, didSelect roomType:
+           RoomType) {
+            self.roomType = roomType
+            updateRoomType()
+        }
+    
+    @IBSegueAction func selectRoomType(_ coder: NSCoder) -> SelectRoomTypeTableViewController? {
+        
+        let selectRoomTypeController = SelectRoomTypeTableViewController(coder: coder)
+        selectRoomTypeController?.delegate = self
+        selectRoomTypeController?.roomType = roomType
+        
+        return selectRoomTypeController
     }
     
 }

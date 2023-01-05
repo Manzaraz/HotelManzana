@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zLo-Nd-tNw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vqk-Zl-o4V">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -265,13 +265,13 @@
                                                             <rect key="frame" x="236.66666666666671" y="0.0" width="116.33333333333334" height="17"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFd-uw-lbe">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="10.333333333333334" height="32.333333333333336"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="10.333333333333334" height="17"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="DHf-na-7Ms">
-                                                                    <rect key="frame" x="22.333333333333343" y="0.0" width="94" height="32.333333333333336"/>
+                                                                    <rect key="frame" x="22.333333333333343" y="0.0" width="94" height="17"/>
                                                                     <connections>
                                                                         <action selector="stepperValueChanged:" destination="Pjl-uQ-JnG" eventType="valueChanged" id="Gbe-w1-cMT"/>
                                                                     </connections>
@@ -313,13 +313,13 @@
                                                             <rect key="frame" x="202.33333333333337" y="0.0" width="150.66666666666663" height="14"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="$10 per day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Adt-ND-4Pz">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="89.666666666666671" height="31.333333333333332"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="89.666666666666671" height="14"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="il6-Gg-jgX">
-                                                                    <rect key="frame" x="101.66666666666666" y="0.0" width="51" height="31.333333333333332"/>
+                                                                    <rect key="frame" x="101.66666666666666" y="0.0" width="51" height="14"/>
                                                                     <connections>
                                                                         <action selector="wifiSwitchChanged:" destination="Pjl-uQ-JnG" eventType="valueChanged" id="yJK-8V-Uyd"/>
                                                                     </connections>
@@ -336,6 +336,37 @@
                                                 <constraint firstItem="lFY-JA-Bc7" firstAttribute="leading" secondItem="5gK-dU-5xb" secondAttribute="leadingMargin" id="dk2-LQ-BWl"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="Z7r-W1-nik">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Z9X-D2-8A0" detailTextLabel="UmU-tE-oKf" style="IBUITableViewCellStyleValue1" id="uNH-J0-pU7">
+                                        <rect key="frame" x="0.0" y="1015.6666564941406" width="393" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uNH-J0-pU7" id="8OO-Ka-y9T">
+                                            <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Room Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Z9X-D2-8A0">
+                                                    <rect key="frame" x="20" y="11.999999999999998" width="85.666666666666671" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UmU-tE-oKf">
+                                                    <rect key="frame" x="311" y="11.999999999999998" width="43.666666666666664" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="zLo-Nd-tNw" kind="show" destinationCreationSelector="selectRoomType:" id="MN1-Tx-5xj"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -364,6 +395,7 @@
                         <outlet property="numberOfAdultsStepper" destination="Ycp-B2-kdI" id="bIr-wq-U6t"/>
                         <outlet property="numberOfChildrenLabel" destination="bFd-uw-lbe" id="WCU-3r-qo7"/>
                         <outlet property="numberOfChildrenStepper" destination="DHf-na-7Ms" id="y5P-dX-G5F"/>
+                        <outlet property="roomTypeLabel" destination="UmU-tE-oKf" id="7yq-u7-VLH"/>
                         <outlet property="wifiSwitch" destination="il6-Gg-jgX" id="UNu-Be-kai"/>
                     </connections>
                 </tableViewController>
@@ -410,6 +442,7 @@
                             <outlet property="delegate" destination="zLo-Nd-tNw" id="Md7-18-evZ"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="1V6-we-L4U"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pC5-pD-lvJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
