@@ -12,8 +12,8 @@ struct Registration {
         lastName: String,
         emailAddress: String
     
-    var checkIn: Date,
-        checkOut: Date,
+    var checkInDate: Date,
+        checkOutDate: Date,
         numberOfAdults: Int,
         numberOfChildren: Int
     

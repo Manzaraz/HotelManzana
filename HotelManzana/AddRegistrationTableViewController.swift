@@ -47,6 +47,25 @@ class AddRegistrationTableViewController: UITableViewController, SelectRoomTypeT
         }
     }
     
+    var registration: Registration? {
+        guard
+            let roomType = roomType ,
+            let firstName = firstNameTextField.text, !firstName.isEmpty,
+            let lastName = lastNameTextField.text, !lastName.isEmpty
+        else { return nil }
+        
+//        let firstName = firstNameTextField.text ?? ""
+//        let lastName = lastNameTextField.text ?? ""
+        let email = emailTextField.text ?? ""
+        let checkInDate = checkInDatePicker.date
+        let checkOutDate = checkOutDatePicker.date
+        let numberOfAdults = Int(numberOfAdultsStepper.value)
+        let numberOfChildren = Int(numberOfChildrenStepper.value)
+        let hasWifi = wifiSwitch.isOn
+        
+        return Registration(firstName: firstName, lastName: lastName, emailAddress: email, checkInDate: checkInDate, checkOutDate: checkOutDate, numberOfAdults: numberOfAdults, numberOfChildren: numberOfChildren, wifi: hasWifi, roomType: roomType)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let midnightToday = Calendar.current.startOfDay(for: Date())
