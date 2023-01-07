@@ -16,6 +16,7 @@
 		61DC94F929636FDD008BB33B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61DC94F729636FDD008BB33B /* LaunchScreen.storyboard */; };
 		61DC950129637857008BB33B /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DC950029637857008BB33B /* Registration.swift */; };
 		61DC950529638C1F008BB33B /* AddRegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DC950429638C1F008BB33B /* AddRegistrationTableViewController.swift */; };
+		61E29FDD2968F25E005ECB61 /* RegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E29FDC2968F25E005ECB61 /* RegistrationTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		61DC94FA29636FDD008BB33B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61DC950029637857008BB33B /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		61DC950429638C1F008BB33B /* AddRegistrationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRegistrationTableViewController.swift; sourceTree = "<group>"; };
+		61E29FDC2968F25E005ECB61 /* RegistrationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegistrationTableViewController.swift; path = ../RegistrationTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		61DC94EB29636FDB008BB33B /* HotelManzana */ = {
 			isa = PBXGroup;
 			children = (
+				61E29FDC2968F25E005ECB61 /* RegistrationTableViewController.swift */,
 				61DC94EC29636FDB008BB33B /* AppDelegate.swift */,
 				61DC94EE29636FDB008BB33B /* SceneDelegate.swift */,
 				61DC94F229636FDB008BB33B /* Main.storyboard */,
@@ -153,6 +156,7 @@
 				61974EB7296532F100B6191F /* RoomType.swift in Sources */,
 				61DC950129637857008BB33B /* Registration.swift in Sources */,
 				61DC94EF29636FDB008BB33B /* SceneDelegate.swift in Sources */,
+				61E29FDD2968F25E005ECB61 /* RegistrationTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
